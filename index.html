@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Django success stories</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='slides.js'></script>
+  </head>
+  
+<style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    .slides.template-default > article:not(.nobackground):not(.biglogo) {
+      background: url(images/logolong-100.png) bottom right no-repeat !important;  
+      background-color: white !important;  
+    } 
+    h2.normal {
+      position:relative;
+      top:10px;
+    }
+    ul.numbered li {
+      list-style-type: decimal;
+    }
+    .pink {
+      color:#f06;
+    }
+    .djgreen {
+      color: #163f2e;
+    }
+    .nomargin {
+      margin:0px;
+    }
+    h1 {
+      margin-top:120px;
+    }
+
+    h1.bigger {
+      font-weight:bold;
+      font-size: 80px !important;
+    }
+    .centerv {
+     margin-top:200px; 
+    }
+    div.freeticket {
+      padding-top: 40px;
+    }
+    div.features {
+      padding-top: 20px;
+    }
+    div.features div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:20px;
+    }
+    div.freeticket div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:30px;
+    }
+    h2.subtitle {
+      position:relative;
+      bottom:0px;
+      margin-top:20px;
+      padding-bottom:0px;
+    }
+    div.list div {
+      margin:20px;
+    }
+  </style>
+
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+        
+      <article style="text-align:center">
+        <br>
+        <img src="images/django-logo.png" width=400 />
+        <br><br><br>
+        <h1 style='margin-top:30px;font-size:75px'>&nbsp;&nbsp;&nbsp;Success stories</h1>
+        <br><br><br><br><br>
+        <div style='font-size:18px'>@LaCantine, 05/11/2012</div>
+      </article>
+
+      <article>
+        <h1>Django fits various projects</h1>
+        <h2 class='normal'>from   small websites to <span class='pink'>1B$ startups</span></h2>
+        <p> </p>
+      </article>
+
+      <article>
+        <center>
+          <h1 class=bigger >Can Django scale ?</h1>
+        </center>
+      </article>
+
+      <article>
+        <center>
+          <h1 class='pink' style='font-size:150px'>YES !</h1>
+        </center>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Disqus.com
+        </h1>
+        <h2 class='subtitle' >World's largest Django application</h2><br>
+        <center>
+          <img src="images/disqus.png" width=400 />
+        </center>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Disqus.com
+        </h1>
+        <ul>
+          <li>+30k req/second peaks</li>
+          <li>+1.7M websites</li>
+          <li>+90M users</li>
+          <li>+5B pages views/month</li>
+          <li>~100 servers</li>
+          <li>35% apache+mod_wsgi</li>
+          <li>20% databases (PostgreSQL, Redis)</li>
+          <li>10% caching (Memcache, Varnish)</li>
+          <li>35% load balancing, monitoring, scripts...</li>
+          <li class="pink">Continuous monitoring/analysis</li>
+        </ul>
+      </article>
+
+
+      <article>
+        <h1 class="nomargin">
+          Instagr.am
+        </h1>
+        <h2 class='subtitle' >The 1B$ startup (now Facebook)</h2>
+        <br>
+        <center>
+          <img src="images/instagram.jpeg" width=400 />
+        </center>
+      </article>
+
+      <article>
+        <h1 class='nomargin'>
+          Instagr.am
+        </h1>
+        <ul>
+          <li>+80M users</li>
+          <li>+5M photos every day</li>
+          <li>+4B shared pictures !</li>
+          <li>Hosted on Amazon EC2</li>
+          <li>+50 Django instances running on gunicorn</li>
+          <li>+20 PostreSQL instances (sharding)</li>
+          <li>Fabric deployments</li>
+          <li>Lots of Redis</li>
+          <li class="pink">Continuous monitoring/analysis</li>
+        </ul>
+      </article>
+
+
+      <article>
+        <h1 class="nomargin">
+          Pinterest.com
+        </h1>
+        <h2 class='subtitle' >3rd US social website</h2>
+        <br><br>
+        <center>
+          <img src="images/pinterest.png" width=500 />
+        </center>
+      </article>
+
+      <article>
+        <h1 class='nomargin'>
+          Pinterest.com
+        </h1>
+        <ul>
+          <li>+20M users</li>
+          <li>+120M monthly visits</li>
+          <li>Hosted on Amazon EC2</li>
+          <li>Storage on Amazon S3</li>
+          <li>+100 caching instances</li>
+          <li>Django instances running on Tornado</li>
+          <li>Memcache/Redis</li>
+          <li>RabbitMQ</li>
+          <li>Nginx/HAproxy/Varnish</li>
+          <li class="pink">Continuous monitoring/analysis</li>
+        </ul>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Mozilla foundation
+        </h1>
+        <br><br>
+        <center>
+          <img src="images/mozilla.png" width=300 />
+        </center>
+        <div>Firefox modules</div>
+        <div>Firefox support site</div>
+        <div>API marketplace</div>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Autolib !
+        </h1>
+        <br><br>
+        <center>
+          <img src="images/autolib.png" width=500 />
+        </center>
+        <div>Information system</div>
+        <div>Car monitoring</div>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Press
+        </h1>
+        <br><br>
+        <div class="list">
+          <div>http://liberation.fr</div>
+          <div>http://m.20minutes.fr</div>
+          <div>http://theonion.com</div>
+          <div>http://washingtonpost.com</div>
+          <div>http://lawrence.com</div>
+          <div>http://guardian.co.uk</div>
+        </div>  
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          Immobilier
+        </h1>
+        <br><br>
+        <div class="list">
+          <div>http://century21.fr</div>
+          <div>http://proprietesdefrance.com</div>
+          <div>http://achetersanscom.com</div>
+          <div>http://louersanscom.com</div>
+          <div>http://bellesmaisonsalouer.com</div>
+          <div>http://bdprivate.com</div>
+        </div>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          More success
+        </h1>
+        <br><br>
+        <div class="list">
+          <div>bitbucket.org</div>
+          <div>lanyrd.com</div>
+          <div>readability.com</div>
+          <div>eventbrite.com</div>
+          <div>dpaste.com</div>
+          <div>prezi.com</div>
+          <div>nationalgeographic.com</div>
+          <div>MichaelMoore.com</div>
+        </div>
+      </article>
+
+      <article>
+        <h1 class="nomargin">
+          More success
+        </h1>
+        <br><br>
+        <div class="list">
+          <div>Some NASA websites</div>
+          <div>Some IRCAM websites</div>
+          <div>Institut Pasteur</div>
+          <div>Always Data !</div>
+          <div>Creme CRM</div>
+          <div>GreenBureau.fr</div>
+          <div>Guideapolis.fr</div>
+          
+        </div>
+      </article>
+
+      <article>
+        <h1 class='pink bigger' style='margin-top:100px'>That's all folks !</h1>
+        <br><br><br><br><br><br>
+        <p><img width=50 style="vertical-align:middle" src="images/twitter.png"/> @revolunet</p>
+        <p><img width=50  style="vertical-align:middle"  src="images/octocat.png"/> revolunet</p>
+      </article>
+
+    </section>
+
+  </body>
+</html>
